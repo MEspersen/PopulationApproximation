@@ -1,0 +1,33 @@
+﻿<Window x:Class="PopulationExercise.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Content="Starting number of organisms:"/>
+                <Label Grid.Row="1" Grid.Column="0" Content="Average daily increase:"/>
+                <Label Grid.Row="2" Grid.Column="0" Content="Number of days to multiply:"/>
+                <Label Grid.Row="3" Grid.Column="0" Content="Day"/>
+                <Label Grid.Row="3" Grid.Column="1" Content="Approximate population"/>
+                <TextBox Name="organismsTextBox" Grid.Row="0" Grid.Column="1"/>
+                <TextBox Name="increaseTextBox" Grid.Row="1" Grid.Column="1"/>
+                <TextBox Name="multiplyTextBox" Grid.Row="2" Grid.Column="1"/>
+            </Grid>
+            <ListBox Name="answerListBox"/>
+            <Button Name="calculateButton" Content="Calculate" Click="calculateButton_Click"/>
+            
+        </StackPanel>
+
+    </Grid>
+</Window>
