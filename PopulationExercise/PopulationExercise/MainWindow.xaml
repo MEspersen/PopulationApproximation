@@ -24,7 +24,7 @@
                 <TextBox Name="increaseTextBox" Grid.Row="1" Grid.Column="1"/>
                 <TextBox Name="multiplyTextBox" Grid.Row="2" Grid.Column="1"/>
             </Grid>
-            <ListBox Name="answerListBox"/>
+            <ListBox Name="answerListBox" Height="180"/>
             <Button Name="calculateButton" Content="Calculate" Click="calculateButton_Click"/>
             
         </StackPanel>
